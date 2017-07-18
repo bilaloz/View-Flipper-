@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context="com.viewflipper.MainActivity">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="40"
+        android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+
+    <ViewFlipper
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/vflipper">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Flipper 1 Flipper 1 Flipper 1 Flipper 1 Flipper 1 Flipper 1 Flipper 1 "
+            android:id="@+id/t1" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Flipper 2 Flipper 2 Flipper2 Flipper2Flipper2 Flipper 2Flipper2 "
+            android:id="@+id/t2" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Flipper 3 Flipper 3 Flipper 3 Flipper 3 Flipper 3 Flipper 3 Flipper3 "
+            android:id="@+id/t3" />
+
+
+        /></ViewFlipper>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="60">
+
+        <Button
+            android:id="@+id/btGeri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="Geri" />
+
+        <Button
+            android:id="@+id/btIleri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="İleri" />
+
+        <Button
+            android:id="@+id/btOto"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otomatik" />
+    </LinearLayout>
+
+</LinearLayout>
